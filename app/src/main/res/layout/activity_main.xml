@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nathen.rectanglecalculator.MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:width="240sp"
+        android:id="@+id/widthInput"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:width="240sp"
+        android:layout_below="@+id/widthInput"
+        android:layout_alignStart="@+id/widthInput"
+        android:layout_marginTop="27dp"
+        android:id="@+id/lengthInput" />
+
+    <TextView
+        android:text="0.00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lengthInput"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/outputArea"
+        android:layout_alignStart="@+id/lengthInput"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="0.00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/outputPermimeter"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/textPermimeter"
+        android:layout_alignBottom="@+id/textPermimeter"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/outputArea" />
+
+
+    <TextView
+        android:text="Width"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textWidth"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/widthInput"
+        android:layout_alignBottom="@+id/widthInput"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textLength"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/lengthInput"
+        android:layout_alignBottom="@+id/lengthInput"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textArea"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/outputArea"
+        android:layout_alignBottom="@+id/outputArea"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Perimeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textPermimeter"
+        android:textSize="24sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textArea"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
